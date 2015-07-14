@@ -8,6 +8,8 @@ public class GiphyResponse{
 
 
 
+
+
 	public ArrayList<Gif> getData(){
 		return data;
 	}

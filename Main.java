@@ -41,12 +41,14 @@ public class Main{
 
 			if(i <= numImages){
 
+
 				Main.openInBrowser(gif.images.fixed_height.url);
 			}
 		}
 	}
 
 	public static void openInBrowser(String url){
+
 
 		if(Desktop.isDesktopSupported()){
 
@@ -59,6 +61,7 @@ public class Main{
                 e.printStackTrace();
 
             } catch(IOException e){
+
 
                 e.printStackTrace();
             }
