@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.net.URISyntaxException;
 import java.util.Scanner;
 import java.util.Random;
+import javax.swing.JOptionPane;
 
 public class Main{
 	public static void main(String[] args) {
@@ -16,13 +17,13 @@ public class Main{
 
 			Scanner respuestaBusqueda = new Scanner (System.in);
 
-			String guardarRespuesta = respuestaBusqueda.nextLine();
+			String guardarRespuesta = JOptionPane.showInputDialog("Search: ");
 
-			System.out.println("Num of Gif:");
+			String numOfGifString = JOptionPane.showInputDialog("Num of Gif: ");
 
-			int numOfGif = respuestaBusqueda.nextInt();
+			int numOfGifInt = Integer.parseInt(numOfGifString);
 
-			Main.searchGifs(guardarRespuesta, numOfGif);
+			Main.searchGifs(guardarRespuesta, numOfGifInt);
 	}
 
 	public static void searchGifs(String term, int numImages){
