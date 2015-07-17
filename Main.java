@@ -35,7 +35,7 @@ public class Main{
 
 		
 
-		for (Gif gif : gifs.getData () ) {
+		for (Gif gif : gifs.getData() ) {
 
 			i++;
 
